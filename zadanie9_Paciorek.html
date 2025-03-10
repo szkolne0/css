@@ -1,0 +1,66 @@
+<html lang="pl">
+	<head>
+	<meta charset="utf-8">
+ <META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=iso-8859-2">
+	</head>
+	<body>
+<ol>
+<li><h1> Składnia teoretyczna → otoczony ramką (może być tabela jedno komórkowa, 
+konieczne wcięcia).  </h1></li>
+<textarea rows="5" cols="70">
+<head>
+(...)
+<link rel="Stylesheet" type="text/css" href="style.css" />
+(...)
+</head>
+</textarea>
+
+<li><h1>  Gdzie wstawiany jest styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz 
+ile razy może on występować w dokumencie, jako podłączenie stylu CSS? </h1></li>
+Pomiędzy znacznikami head i  może występować dowolną liczbę razy.
+<li><h1>  Jak jest najprostsza forma wstawiania stylu zewnętrznego → otoczony ramką (może 
+być tabela jedno komórkowa?</h1></li>
+<textarea rows="1" cols="50">
+<link rel="Stylesheet" type="text/css" href="style.css" />
+</textarea>
+<li><h1> Ile arkuszy styli może być dołączanych do jednego dokumentu HTML oraz jaka zasad 
+musi być zachowana przy większej ilości dołączanych styli?  </h1></li>
+<textarea>
+można dołączyć dowolną liczbę zewnętrznych arkuszy stylów 
+- każdy jako osobny element <link rel="Stylesheet" />. 
+</textarea>
+<li><h1> Co się dzieje w przypadku konfliktów? Przez konflikt rozumiemy, gdy te same style 
+są definiowane w różnych arkuszach styli podłączone do tego samego arkusza  </h1></li>
+ W przypadku konfliktów, ważniejsze będą deklaracje z arkusza dołączonego później.
+ 
+<li><h1> Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego?  </h1></li>
+
+<li><h1> Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?  </h1></li>
+
+<li><h1> Jakie rozszerzenie posiadają plik będący zewnętrznym arkuszem styli?  </h1></li>
+.css
+<li><h1> Jakie są zalety zewnętrznego arkusza styli( dwie – z użyciem wyliczenia?  </h1></li>
+1)wszystkie nasze strony w obrębie całego serwisu mogą mieć pewne wspólne cechy. 
+2) jeśli w ostatniej chwili zdecydujemy się zmienić np. rodzaj czcionki na wszystkich 
+stronach, możemy to zrobić, modyfikując jedynie zewnętrzny arkusz stylów, bez 
+konieczności zmiany każdej strony osobno. 
+<li><h1> Uwagi na temat pisania w CSS.  </h1></li>
+Uwaga1: <br>
+Język CSS dopuszcza stosowanie zarówno dużych, jak i małych liter.  <br>
+Poprawnymi nazwami atrybutu są background, backGROUND oraz BACKground. <br> <br>
+Uwaga2: <br>
+Wstawienie białych znaków (spacje, tabulacje, znaki nowej linii) w arkuszu CSS nie ma  <br>
+wpływu na jego działanie.  <br> <br>
+Uwaga3:  <br>
+Komentarze w arkuszu stylów  <br>
+pisze się używając znaków: /* (otworzenie komentarza) oraz */ (zamknięcie komentarza),  <br>
+np.: /*to jest komentarz*/.  <br>
+Wszystko pomiędzy tymi znakami jest ignorowane przez przeglądarkę. <br> <br>
+Uwaga4: <br>
+Część poleceń stylów CSS nie sa interpretowane przez niektóre przeglądarki internetowe lub  <br>
+jest obsługiwana odmiennie. Dlatego zawsze należy sprawdzać efekty w praktyce - jeśli to  <br>
+możliwe, to najlepiej w kilku najbardziej popularnych przeglądarkach: Microsoft Internet  <br>
+Explorer, Netscape/Mozilla/Firefox (czyli przeglądarki oparte na silniku Gecko), Opera.
+</ol>
+</body>
+</html>
